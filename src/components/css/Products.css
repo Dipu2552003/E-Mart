@@ -1,11 +1,29 @@
-.card:hover {
+.product:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  .card:hover .btn {
+  .product:hover .btn {
     background-color: #000;
     color: #fff;
   }
+
+  .title-md {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 5px solid #ff6433; /* Adjust the width and color as needed */
+}
+
+
+.product{
+  min-height: 250px;
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
   

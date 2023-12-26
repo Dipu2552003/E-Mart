@@ -88,7 +88,11 @@ const Products = () => {
   >
     Electronic
   </button>
+  
 </div>
+
+
+
 
         <div className="row">
           {filter.length === 0
@@ -116,14 +120,16 @@ const Products = () => {
                   </div>
                 </div>
               ))
+              
             : filter.map((product) => (
                 <div className="col-md-3 mb-2" key={product.id}>
-                  <div className="card h-100 text-center p-4" key={product.id}>
+                  <div className="product card h-100 text-center p-4" key={product.id}>
                     <img
                       src={product.image}
                       className="card-img-top"
                       alt={product.title}
                       height="250px"
+                      
                     />
                     <div className="card-body">
                       <h5 className="card-title mb-0">
@@ -161,6 +167,9 @@ const Products = () => {
           </div>
         </div>
         <div className="row justify-content-center">
+        <div className="title-md ">
+  <h3 className=" text-black-50">See our product</h3>
+</div>
           {loading ? <Loading /> : <ShowProducts />}
         </div>
       </div>
